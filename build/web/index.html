@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Resume Builder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body { font-family: Arial; padding: 20px; }
+        input, textarea {
+            width: 100%; padding: 8px; margin-bottom: 12px;
+            border: 1px solid #ccc; border-radius: 5px;
+        }
+        h2 { background: #333; color: white; padding: 10px; }
+    </style>
+    </head>
+    <body>
+        <h2>Personal Information</h2>
+        <form action="ResumeServlet" method="post">
+            
+            Full Name: <input type="text" name="name" required>
+            Address: <input type="text" name="address" required>
+            Email: <input type="email" name="email" required>
+            Phone: <input type="number" name="phone" required>
+            LinkedIn: <input type="text" name="linkedin" required>
+            Github:<input type="text" name="github" required>
+            
+            <h2>Career Objectives</h2>
+            <textarea name="objective" required></textarea>
+            
+            <h2>Education</h2>
+            MCA College: <input type="text" name="mcaCollege" required>
+            MCA CGPA:<input type="text" name="mcaCgpa" required>
+            MCA Year:<input type="text" name="mcaYear" required>
+            
+            BSc College: <input type="text" name="bscCollege" required>
+            BSc CGPA:<input type="text" name="bscPercent" required>
+            BSc Year:<input type="text" name="bscYear" required>
+            
+            12th School: <input type="text" name="twelveSchool" required>
+            12th Percent:<input type="text" name="twelvepercent" required>
+            12th Year:<input type="text" name="twelveYear" required>
+            
+            10th School: <input type="text" name="tenSchool" required>
+            10th Percent:<input type="text" name="tenPercent" required>
+            10th Year:<input type="text" name="tenYear" required>
+            
+            <h2>Technical Skills</h2>
+            Programming Languages: <textarea name="languages" required></textarea>
+            Software Tools: <textarea name="tools" required></textarea>
+            Databases: <textarea name="database" required></textarea>
+            
+            <h2>Projects (2 Projects)</h2>
+            
+             Project 1 Title: <input type="text" name="p1title" required>
+             Project 1 Description: <textarea name="p1desc" required></textarea>
+             Project 1 Tools: <textarea name="p1tools" required></textarea>
+             Project 1 Learning: <textarea name="p1learn" required></textarea>
+             
+             Project 2 Title: <input type="text" name="p2title" required>
+             Project 2 Description: <textarea name="p2desc" required></textarea>
+             Project 2 Tools: <textarea name="p2tools" required></textarea>
+             Project 2 Learning: <textarea name="p2learn" required></textarea>
+             
+    <h2>Co-Curricular Activities</h2>
+    <textarea name="cocurricular" required></textarea>
+    
+    <h2>Extra-Curricular Activities</h2>
+    <textarea name="extracurricular" required></textarea>
+    
+    <h2>Awards & Achievements</h2>
+    <textarea name="awards" required></textarea>
+    
+    <h2>Personal Details</h2>
+    
+    Date Of Birth: <input type="date" name="dob" required>
+    Nationality: <input type="text" name="nationality" required>
+    Permanent Address: <textarea name="permanentAddress" required></textarea>
+    Languages Known: <textarea name="languagesKnown" required></textarea>
+    Hobbies: <textarea name="hobbies" required></textarea>
+    
+    <h2>References</h2>
+    Ref 1 Name: <input type="text" name="ref1name" required>
+    Ref 1 Designation: <input type="text" name="ref1desig" required>
+    Ref 1 Email: <input type="text" name="ref1email" required>
+    Ref 1 Phone: <input type="text" name="ref1phone" required>
+
+    Ref 2 Name: <input type="text" name="ref2name" required>
+    Ref 2 Designation: <input type="text" name="ref2desig" required>
+    Ref 2 Email: <input type="text" name="ref2email" required>
+    Ref 2 Phone: <input type="text" name="ref2phone" required>
+    
+    <input type="submit" value="Generate Resume" style="Padding:10px 20px;">
+        </form>
+    </body>
+</html>
