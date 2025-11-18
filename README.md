@@ -129,4 +129,4 @@ Multiple project entries
 Hari Prasad
 MCA Student, CMR Institute of Technology
 GitHub: https://github.com/HPMISHRAA
-LinkedIn: https://www.linkedin.com/in/hari-prasad
+LinkedIn: https://www.linkedin.com/in/hari-prasad-672183285/
